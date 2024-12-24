@@ -1,6 +1,6 @@
 <?php
 
-$uploadDir = '/home/kalai/htdocs/kalai/'; // Define your upload directory
+$uploadDir = '../WebHosting/sites'; // Define your upload directory
 
 // Function to handle folder upload
 function handleFolderUpload($files, $uploadDir) {

@@ -162,31 +162,22 @@
     <!-- Upload Section -->
     <section id="upload" class="upload-section py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Launch Your Project <i class="fa fa-rocket" style="font-size:48px;color:rgb(255, 62, 62)"></i>
+            <h2 class="text-center mb-4">Launch Your Websites <i class="fa fa-rocket" style="font-size:48px;color:rgb(255, 62, 62)"></i>
             </h2>
-            <p class="text-center text-muted mb-5">Drag and drop your project ZIP file or click to browse</p>
             <div class="upload-area mx-auto">
                 <div class="upload-content">
                     <i class="bi bi-cloud-upload"></i>
-                    <p>Drop your ZIP file here or <label for="file-upload" class="text-primary">browse</label></p>
                     <form action="upload.php" method="POST" enctype="multipart/form-data">
-                    <form action="upload.php" method="POST" enctype="multipart/form-data">
-        <label for="domain">Enter Subdomain Name:</label>
-        <input type="text" id="domain" name="domain" required placeholder="e.g., userdomain" />
+        <h6>Enter Subdomain Name</h6>
+        <input class="form-control" type="text" id="domain" name="domain" required placeholder="" />
         <br><br>
 
-        <label for="file">Upload Your Project: (.zip)</label>
-        <input type="file" id="file" name="file" accept=".zip" />
+        <h6>Upload Your Project: (.zip)</h6>
+        <input type="file" class="form-control form-control-lg" id="file" name="file" accept=".zip" />
         <br><br>
-
-        <!-- <label for="folder">Or Upload a Folder:</label>
-        <input type="file" id="folder" name="folder[]" webkitdirectory directory multiple />
-        <br><br> -->
-
-        <button type="submit">Host Project</button>
+        <button type="submit" class="btn btn-primary">Deploy Now</button>
                     </form>
-                    <small class="text-muted">ZIP files up to 500MB</small>
-                </div>
+               </div>
             </div>
         </div>
     </section>
